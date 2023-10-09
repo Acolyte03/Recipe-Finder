@@ -1,21 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+   
+    
+
 
 .title{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Bentham', serif;
     font-size: 3vw;
+    justify-content: center;
+    align-items: center;
+    
+    
     
 }
 .subtitle{
-    font-size: 1.5vw;
+    font-size: 2vw;
+    font-family: 'Annie Use Your Telescope', cursive;
 }
 
 .search{
     display: block;
     width: 20%;
-    margin: 1%
+    margin:1%;
     
 }
 .Btn{
     width:40%;
+    height:40%;
     margin:2%
+}
+.input{
+    border: grey solid
+}
+ 
+.select{
+    margin:4%;
+    
+}
+    
+.center{
+     display: block;
+    
+     margin-right: auto;
+     width: 20%;
+
 }
