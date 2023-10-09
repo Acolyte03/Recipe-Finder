@@ -1,3 +1,4 @@
+// <<<<<<< AlbertsBranch
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 
 .title{
@@ -19,3 +20,49 @@
     width:40%;
     margin:2%
 }
+// =======
+/* Can use style.css for both .htmls */
+/* Must give unique id/class names for similar 
+selectors, such as <h1 id = "index header"> vs
+<h1 id = "search header>*/
+
+/* Bulma uses $<attribute>: value; for properties */
+/* Ex: $purple: #8A4D76; */
+/* $body-background-color: $purple; */
+
+body{
+
+}
+
+header{
+
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+p {
+
+}
+
+.img {
+
+}
+
+footer {
+
+}
+
+/* Can import other .sass modules above bulma */
+/* Goes at bottom of page after everything else */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+// >>>>>>> main
