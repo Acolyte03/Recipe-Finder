@@ -1,14 +1,9 @@
-<<<<<<< HEAD
+
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 
-   
-    
-
-=======
-// <<<<<<< AlbertsBranch
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
->>>>>>> 265e6749afb4a18f7fa3844c223a527f25eb79c9
+/* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */
 
 .title{
     font-family: 'Bentham', serif;
@@ -35,7 +30,7 @@
     height:40%;
     margin:2%
 }
-<<<<<<< HEAD
+
 .input{
     border: grey solid
 }
@@ -52,8 +47,6 @@
      width: 20%;
 
 }
-=======
-// =======
 /* Can use style.css for both .htmls */
 /* Must give unique id/class names for similar 
 selectors, such as <h1 id = "index header"> vs
@@ -98,5 +91,5 @@ footer {
 /* Can import other .sass modules above bulma */
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-// >>>>>>> main
->>>>>>> 265e6749afb4a18f7fa3844c223a527f25eb79c9
+
+/* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */

@@ -6,3 +6,18 @@
 
 // Handle local storage here?
 // localStorage.getItem/setItem
+
+// Variables for input data and search button
+var inputData = $("input");
+var searchBtn = $("Btn");
+
+// When search button clicked, new search saved to browser.
+searchBtn.on("click", function(event)
+{
+    event.preventDefault();
+
+    var newSearch = $(this).inputData;
+    localStorage.setItem('search', newSearch);
+});
+
+var getSearch = localStorage.getItem('search');
