@@ -11,7 +11,7 @@
         method: 'GET',
         headers: 
         {
-            'X-RapidAPI-Key': config.api_key_1,
+            'X-RapidAPI-Key': 'a4648e0474msh710bc51684197e7p129ccajsn9a00cae65197',
             'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
         }
     };
@@ -47,7 +47,7 @@
         method: 'GET',
         headers: 
         {
-            'X-RapidAPI-Key': 'config.api_key_2',
+            'X-RapidAPI-Key': 'a4648e0474msh710bc51684197e7p129ccajsn9a00cae65197',
             'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
         }
     };
