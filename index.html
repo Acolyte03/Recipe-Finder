@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasty Tasty home page</title>
-<!-- // <<<<<<< AlbertsBranch -->
     <!-- Insert CSS framework and Google fonts here -->
     <!-- Linked .css files -->
        
@@ -29,26 +28,25 @@
         </div>
     </section>
     
+    
     <div class="search">
         <label class="label">Search for a Recipe!</label>
         <div class="control">
+
+            <input class="input" type="text" placeholder="Search... burger, pasta, etc.">
+            <div class="select">
+                <select>
+                  <option>Select dropdown</option>
+                  <option>Pair with Beverages</option>
+                </select>
+              </div>
+            <button class="Btn">Search</button>
+
             <input class="input" type="text" id = "query" placeholder="Text input">
             <button class="Btn" id = "inputButton">Search</button>
+
         </div>
-    </div>   
-    <div class="container">
-
     </div>
-    
-    
-
-    
-      
-    
-
-
-
-
     
 </head>
 <body>
@@ -58,7 +56,6 @@
     </main>
     <!-- Perhaps link jQuery version here if needed to be used -->
     <!-- Linked .js files -->
-<!-- // >>>>>>> main -->
     <script src = "assets/js/script.js"></script>
     <script src = "assets/js/api.js"></script>
 </body>
