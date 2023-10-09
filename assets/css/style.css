@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+
+.title{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3vw;
+    
+}
+.subtitle{
+    font-size: 1.5vw;
+}
+
+.search{
+    display: block;
+    width: 20%;
+    margin: 1%
+    
+}
+.Btn{
+    width:40%;
+    margin:2%
+}
