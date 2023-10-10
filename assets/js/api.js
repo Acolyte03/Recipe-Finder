@@ -26,13 +26,6 @@
         })
         .then(function(response)
         {
-            // //build cards here
-            for(i = 0; i < 6; i++)
-            {
-                
-                
-
-            }
             console.log(response);
             console.log(foodSearch);
         })
@@ -54,7 +47,8 @@
         }
     };
 
-
+var name = "";
+var description = "";
     function apiDrinkSearch(event)
     {
         event.preventDefault();
@@ -62,23 +56,40 @@
         var drinkSearch = drinkUrl.concat(drinkQuery.value);
         if(dropdown == "Pair with Beverages")
     {
+        console.log("Hi");
         fetch(drinkSearch, drinkOptions).then(function (response) 
         {
             return response.json()
+            .then(data => 
+                {
+                    console.log(data);
+                    // name = data.name;
+                    // //build cards here
+                    for(i = 0; i < 6; i++)
+                    {
+                        description = data.drinks[i].strInstructions;
+                        $("#c" + i + "Description").text(description);
+                    }
+                    
+                    console.log(description);
+                    // return description;
+                    
+                })
         })
-        .then(function(response)
-        {
-            // //build cards here
-            // for(i = 0; i < 6; i++)
-            // {
-                
-            // }
-            console.log(response);
-            console.log(drinkSearch);
-        })
+        // .then(function(response)
+        // {
+        //     console.log(description);
+        //     //build cards here
+        //     for(i = 0; i < 6; i++)
+        //     {
+        //         $("#c1Description").text(description);
+        //     }
+        //     console.log(response);
+        //     console.log(drinkSearch);
+        // })
         .catch(function(error)
         {
-            console.error(error);
+            console.log(error);
         });
     
     
