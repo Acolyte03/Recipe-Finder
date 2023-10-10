@@ -8,16 +8,35 @@
 // localStorage.getItem/setItem
 
 // Variables for input data and search button
-var inputData = $("input");
+var inputData = $("inputButton");
 var searchBtn = $("Btn");
+var foodSearched = {food: []};
+// var ID of list to append = $("listID"); or $("ul")?
 
 // When search button clicked, new search saved to browser.
 searchBtn.on("click", function(event)
 {
     event.preventDefault();
 
-    var newSearch = $(this).inputData;
-    localStorage.setItem('search', newSearch);
+    var newSearch = $(this).inputData.val();
+    // var newDropdown = $(this).?;
+    foodSearched.food.push(newSearch);
+    localStorage.setItem('search', JSON.stringify(foodSearched));
+    // localStorage.setItem(newSearch, ?);
 });
 
-var getSearch = localStorage.getItem('search');
+function appendSearchHistory()
+{
+    foodSearched = JSON.parse(localStorage.getItem('search'));
+    
+    for (var i = 0; i < foodSearched.length; i++)
+    {
+        var newList = document.createElement("ul");
+        newList.innerText = foodSearched[i];
+        // class.appendChild(newList);
+        // class being, whatever in index.html the 'search history' list will be called
+    }
+
+}
+
+appendSearchHistory();
