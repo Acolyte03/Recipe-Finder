@@ -8,35 +8,58 @@
 // localStorage.getItem/setItem
 
 // Variables for input data and search button
-var inputData = $("inputButton");
-var searchBtn = $("Btn");
-var foodSearched = {food: []};
-// var ID of list to append = $("listID"); or $("ul")?
+var foodBtn = $(".foodBtn");
+var drinkBtn = $(".drinkBtn");
+
 
 // When search button clicked, new search saved to browser.
-searchBtn.on("click", function(event)
+foodBtn.on("click", function(event)
 {
     event.preventDefault();
+    var foodData = document.querySelector("#query").value;
+    // foodData = "";
 
-    var newSearch = $(this).inputData.val();
-    // var newDropdown = $(this).?;
-    foodSearched.food.push(newSearch);
-    localStorage.setItem('search', JSON.stringify(foodSearched));
-    // localStorage.setItem(newSearch, ?);
+    var foodSearch = [];
+    foodSearch.push(foodData);
+    localStorage.setItem('food', JSON.stringify(foodSearch));
+    console.log(foodSearch + " saved.");
 });
 
-function appendSearchHistory()
+drinkBtn.on("click", function(event)
 {
-    foodSearched = JSON.parse(localStorage.getItem('search'));
+    event.preventDefault();
+    var drinkData = document.querySelector("#Dquery").value;
+    // drinkData = "";
+
+    var drinkSearch = [];
+    drinkSearch.push(drinkData);
+    localStorage.setItem('drink', JSON.stringify(drinkSearch));
+    console.log(drinkSearch + " saved.");
+});
+
+// Appends the search history to the sidebar, under the search bar (but not yet...)
+// function appendSearchHistory()
+// {
+    var foodSearched = JSON.parse(localStorage.getItem("food"));
+    var drinkSearched = JSON.parse(localStorage.getItem("drink"));
     
-    for (var i = 0; i < foodSearched.length; i++)
-    {
-        var newList = document.createElement("ul");
-        newList.innerText = foodSearched[i];
-        // class.appendChild(newList);
-        // class being, whatever in index.html the 'search history' list will be called
-    }
+//     for (var i = 0; i < userSearched.food.length; i++)
+//     {
+//         var newList = document.createElement("ul");
+//         newList.innerText = userSearched.food[i];
+//         // class.appendChild(newList);
+//         // class being, whatever in index.html the 'search history' list will be called
+//     }
 
-}
+// }
+// Run append.
+// appendSearchHistory();
 
-appendSearchHistory();
+// // Removes search history if desired; need to implement a button of some kind
+// function removeSearchHistory()
+// {
+//     // either a button near the bottom, or on each <li> item
+//     // otherwise, the code below just clears out the entire history
+//     localStorage.clear();
+// }
+// and run function, probably through a single 'clear all' button.

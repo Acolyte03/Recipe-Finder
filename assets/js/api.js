@@ -52,7 +52,7 @@ var description = "";
     function apiDrinkSearch(event)
     {
         event.preventDefault();
-        var drinkQuery = document.querySelector("#query");
+        var drinkQuery = document.querySelector("#Dquery");
         var drinkSearch = drinkUrl.concat(drinkQuery.value);
         if(dropdown == "Pair with Beverages")
     {

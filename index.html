@@ -33,17 +33,17 @@
         <label class="label">Search for a Recipe!</label>
         <div class="control">
 
-            <input class="input" type="text" placeholder="Search... burger, pasta, etc.">
+            <input class="input" type="text" id="query" placeholder="Search... Burger, pasta, etc.">
+            <button class="Btn foodBtn" id="foodInput">Search</button>
+
             <div class="select">
-                <select id = "dropdown">
+                <select id="dropdown">
                   <option>Select dropdown</option>
                   <option>Pair with Beverages</option>
                 </select>
               </div>
-            <button class="Btn" id = "foodInput">Search</button>
-
-            <input class="input" type="text" id = "query" placeholder="Search... Vodka, Tequila, etc.">
-            <button class="Btn" id = "inputButton">Search</button>
+            <input class="input" type="text" id="Dquery" placeholder="Search... Vodka, tequila, etc.">
+            <button class="Btn drinkBtn" id="inputButton">Search</button>
             
             <!-- Needs 'append' to search history underneath search bar(s) -->
             <!-- Perhaps like <ul> <li><a href = link to recipes></a></li> </ul> -->
