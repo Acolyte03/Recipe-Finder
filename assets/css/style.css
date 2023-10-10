@@ -1,24 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
+
+.backgroun-image{
+    background-repeat: none;
+    background-size:contain
+}
 
 /* index.html elements */
+
 .title{
-    font-family: 'Bentham', serif;
-    font-size: 3vw;
+    font-size: 4vw;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url();   
+
 }
        
 .subtitle{
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: 'Annie Use Your Telescope', cursive;
 }
 
@@ -47,6 +52,10 @@
      margin-right: auto;
      width: 20%;
 
+}
+
+.image{
+    margin-bottom: 6%
 }
 
 /* Can use style.css for both .htmls */
@@ -88,6 +97,6 @@ footer {
 
 } */
 
-/* Can import other .sass modules above bulma */
+
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
