@@ -10,6 +10,8 @@
 // Variables for input data and search button
 var inputData = $("inputButton");
 var searchBtn = $("Btn");
+var foodSearched = {food: []};
+// var ID of list to append = $("listID"); or $("ul");
 
 // When search button clicked, new search saved to browser.
 searchBtn.on("click", function(event)
@@ -18,8 +20,19 @@ searchBtn.on("click", function(event)
 
     var newSearch = $(this).inputData.val();
     // var newDropdown = $(this).?;
-    localStorage.setItem('search', JSON.stringify(newSearch));
+    foodSearched.food.push(newSearch);
+    localStorage.setItem('search', JSON.stringify(foodSearched));
     // localStorage.setItem(newSearch, ?);
 });
 
-var getSearch = localStorage.getItem('search');
+// var getSearch = localStorage.getItem("search");
+
+function appendSearchHistory()
+{
+    foodSearched = JSON.parse(localStorage.getItem('search'));
+    // might need a loop to loop through array of food searched?
+    // var newList = $("<li></li>").foodSearched;
+    // var ID of list to append.append(foodSearched); hmm...
+}
+
+appendSearchHistory();

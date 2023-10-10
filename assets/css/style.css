@@ -25,13 +25,13 @@
 .search{
     display: block;
     width: 20%;
-    margin:1%;
+    margin: 1%;
     
 }
 .Btn{
-    width:40%;
-    height:40%;
-    margin:2%
+    width: 40%;
+    height: 40%;
+    margin: 2%;
 }
 
 .input{
@@ -39,13 +39,11 @@
 }
  
 .select{
-    margin:4%;
-    
+    margin: 4%;  
 }
     
 .center{
-     display: block;
-    
+     display: block;   
      margin-right: auto;
      width: 20%;
 
@@ -55,10 +53,6 @@
 /* Must give unique id/class names for similar 
 selectors, such as <h1 id = "index header"> vs
 <h1 id = "search header>*/
-
-/* Bulma uses $<attribute>: value; for properties */
-/* Ex: $purple: #8A4D76; */
-/* $body-background-color: $purple; */
 
 body{
 
