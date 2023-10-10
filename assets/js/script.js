@@ -8,7 +8,7 @@
 // localStorage.getItem/setItem
 
 // Variables for input data and search button
-var inputData = $("input");
+var inputData = $("inputButton");
 var searchBtn = $("Btn");
 
 // When search button clicked, new search saved to browser.
@@ -16,8 +16,10 @@ searchBtn.on("click", function(event)
 {
     event.preventDefault();
 
-    var newSearch = $(this).inputData;
-    localStorage.setItem('search', newSearch);
+    var newSearch = $(this).inputData.val();
+    // var newDropdown = $(this).?;
+    localStorage.setItem('search', JSON.stringify(newSearch));
+    // localStorage.setItem(newSearch, ?);
 });
 
 var getSearch = localStorage.getItem('search');
