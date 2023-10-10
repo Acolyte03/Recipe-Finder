@@ -15,23 +15,46 @@
             'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
         }
     };
+    var foodName = "";
+    var foodDescription = "";
+    var foodLink = "https://tasty.co/search?q=";
+    var foodImg = "";
        function apiFoodSearch(event)
     {
         event.preventDefault();
-        var foodQuery = document.querySelector("#query");
+        var foodQuery = document.querySelector("#foodQuery");
         var foodSearch = foodUrl.concat(foodQuery.value);
         fetch(foodSearch, foodOptions).then(function (response) 
         {
-            return response.json()
-        })
-        .then(function(response)
-        {
-            console.log(response);
             console.log(foodSearch);
+            return response.json()
+            
+        })
+        .then(data => 
+        {
+            for(i = 0; i < 6; i++)
+            {
+            foodDescription = data.results[i].description;
+
+            foodName = data.results[i].name;
+
+            foodImg = data.results[i].thumbnail_url;
+
+
+            foodLink = foodLink.concat(data.results[i].id);
+            $("#c" + i + "header").text(foodName);
+            $("#c" + i + "Description").text(foodDescription);
+            var ab = document.getElementById("link" + i);
+            ab.href = foodLink;
+
+            var fImg = document.getElementById("img" + i);
+            fImg.src = foodImg;
+            }
+            console.log(data);
         })
         .catch(function(error)
         {
-            console.error(error);
+            console.log(error);
         });
     } 
      foodInput.addEventListener('click', apiFoodSearch);
@@ -47,14 +70,16 @@
         }
     };
 
-var name = "";
+var drinkName = "";
 var description = "";
+var drinkLink = "https://www.thecocktaildb.com/drink/";
+var drinkImg = "";
     function apiDrinkSearch(event)
     {
         event.preventDefault();
-        var drinkQuery = document.querySelector("#Dquery");
+        var drinkQuery = document.querySelector("#drinkQuery");
         var drinkSearch = drinkUrl.concat(drinkQuery.value);
-        if(dropdown == "Pair with Beverages")
+        if(dropdown == "Drink")
     {
         console.log("Hi");
         fetch(drinkSearch, drinkOptions).then(function (response) 
@@ -68,7 +93,17 @@ var description = "";
                     for(i = 0; i < 6; i++)
                     {
                         description = data.drinks[i].strInstructions;
+                        drinkName = data.drinks[i].strDrink;
+                        drinkLink = drinkLink.concat(data.drinks[i].idDrink);
+                        drinkImg = data.drinks[i].strDrinkThumb;
+                        console.log(drinkLink);
+                        // drinkLink = data.drinks[i].
+                        $("#c" + i + "header").text(drinkName);
                         $("#c" + i + "Description").text(description);
+                        var a = document.getElementById("link" + i);
+                        a.href = drinkLink;
+                        var dImg = document.getElementById("img" + i);
+                        dImg.src = drinkImg;
                     }
                     
                     console.log(description);
