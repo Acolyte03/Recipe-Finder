@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
-/* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */
 
+/* index.html elements */
 .title{
     font-family: 'Bentham', serif;
     font-size: 3vw;
     justify-content: center;
     align-items: center;
-    
-    
-    
+    background-image: url();   
 }
+       
 .subtitle{
     font-size: 2vw;
     font-family: 'Annie Use Your Telescope', cursive;
@@ -22,13 +25,13 @@
 .search{
     display: block;
     width: 20%;
-    margin:1%;
+    margin: 1%;
     
 }
 .Btn{
-    width:40%;
-    height:40%;
-    margin:2%
+    width: 40%;
+    height: 40%;
+    margin: 2%;
 }
 
 .input{
@@ -36,27 +39,24 @@
 }
  
 .select{
-    margin:4%;
-    
+    margin: 4%;  
 }
     
 .center{
-     display: block;
-    
+     display: block;   
      margin-right: auto;
      width: 20%;
 
 }
+
 /* Can use style.css for both .htmls */
 /* Must give unique id/class names for similar 
 selectors, such as <h1 id = "index header"> vs
 <h1 id = "search header>*/
 
-/* Bulma uses $<attribute>: value; for properties */
-/* Ex: $purple: #8A4D76; */
-/* $body-background-color: $purple; */
+/* template elements */
 
-body{
+/* body{
 
 }
 
@@ -86,10 +86,8 @@ p {
 
 footer {
 
-}
+} */
 
 /* Can import other .sass modules above bulma */
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-
-/* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */

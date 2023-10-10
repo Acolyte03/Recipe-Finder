@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasty Tasty home page</title>
+    <title>Tasty Tasty Home Page</title>
+
     <!-- Insert CSS framework and Google fonts here -->
-    <!-- Linked .css files -->
-       
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Linked .css files -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
-
 </head>
+
+<!-- Start of body -->
 <body>
     <section class="hero is-small-medium is-primary">
         <div class="hero-body">
@@ -27,13 +28,17 @@
           </p>
         </div>
     </section>
-    
-    
+
+    <!-- Search bars on left-side of site -->
     <div class="search">
         <label class="label">Search for a Recipe!</label>
         <div class="control">
 
-            <input class="input" type="text" id = "foodQuery" placeholder="Search... burger, pasta, etc.">
+          <!-- Food search -->
+            <input class="input" type="text" id = "foodQuery" id="query" placeholder="Search... Burger, pasta, etc.">
+            <button class="Btn foodBtn" id="foodInput">Search</button>
+
+          <!-- Drink dropdown/search -->
             <div class="select">
                 <select id = "dropdown">
                   <option>Food</option>
@@ -48,6 +53,7 @@
         </div>
     </div>
     
+    <!-- Start of main (card output) -->
     <main>
       <!-- Output search results of food input, up to 4-6 on a page -->
       <!-- Would include as cards: food name on top, image of food;
@@ -74,7 +80,8 @@
               </figure>
             </div>           
             <div class="content p-5" id = "c0Description">
-              Lorem ipsum
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
               <br>
             </div>
           </div>
@@ -211,31 +218,18 @@
                       </div>
       </div>
     </div>
+
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-</head>
-<body>
-    <main>
-            <!-- Show the main site, with search bar on left, header on top,
-            space on right to display maybe our top 4-6 faves as placeholders? -->
-    </main>
-    <!-- Perhaps link jQuery version here if needed to be used -->
+    <!-- Link to jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" 
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
+    crossorigin="anonymous"></script>
     <!-- Linked .js files -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" 
     integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" 
     crossorigin="anonymous"></script>
     <script src = "assets/js/script.js"></script>
     <script src = "assets/js/api.js"></script>
+
 </body>
 </html>
