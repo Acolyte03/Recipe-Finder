@@ -4,7 +4,7 @@
     // method, cache, credentials, etc, if needed    
     //} .then (response)
 
-    
+    var dropdown = "";
     var foodUrl = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=6&q=';
     var foodOptions = 
     {
@@ -27,10 +27,12 @@
         .then(function(response)
         {
             // //build cards here
-            // for(i = 0; i < 6; i++)
-            // {
+            for(i = 0; i < 6; i++)
+            {
                 
-            // }
+                
+
+            }
             console.log(response);
             console.log(foodSearch);
         })
@@ -39,7 +41,7 @@
             console.error(error);
         });
     } 
-     inputButton.addEventListener('click', apiFoodSearch);
+     foodInput.addEventListener('click', apiFoodSearch);
 
     var drinkUrl = 'https://the-cocktail-db.p.rapidapi.com/search.php?s=';
     var drinkOptions = 
@@ -58,6 +60,8 @@
         event.preventDefault();
         var drinkQuery = document.querySelector("#query");
         var drinkSearch = drinkUrl.concat(drinkQuery.value);
+        if(dropdown == "Pair with Beverages")
+    {
         fetch(drinkSearch, drinkOptions).then(function (response) 
         {
             return response.json()
@@ -76,5 +80,21 @@
         {
             console.error(error);
         });
+    
+    
+    
+    }
     } 
+    window.addEventListener("DOMContentLoaded", function() 
+    { 
+        // when the page has loaded the DOM elements 
+        document.getElementById("dropdown").addEventListener("change", function() 
+        { 
+          dropdown = dropdown.concat(this.value);
+        })
+    });
+    
+    
+    
+    
     inputButton.addEventListener('click', apiDrinkSearch);
