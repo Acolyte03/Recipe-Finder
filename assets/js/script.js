@@ -11,7 +11,7 @@
 var inputData = $("inputButton");
 var searchBtn = $("Btn");
 var foodSearched = {food: []};
-// var ID of list to append = $("listID"); or $("ul");
+// var ID of list to append = $("listID"); or $("ul")?
 
 // When search button clicked, new search saved to browser.
 searchBtn.on("click", function(event)
@@ -25,14 +25,18 @@ searchBtn.on("click", function(event)
     // localStorage.setItem(newSearch, ?);
 });
 
-// var getSearch = localStorage.getItem("search");
-
 function appendSearchHistory()
 {
     foodSearched = JSON.parse(localStorage.getItem('search'));
-    // might need a loop to loop through array of food searched?
-    // var newList = $("<li></li>").foodSearched;
-    // var ID of list to append.append(foodSearched); hmm...
+    
+    for (var i = 0; i < foodSearched.length; i++)
+    {
+        var newList = document.createElement("ul");
+        newList.innerText = foodSearched[i];
+        // class.appendChild(newList);
+        // class being, whatever in index.html the 'search history' list will be called
+    }
+
 }
 
 appendSearchHistory();

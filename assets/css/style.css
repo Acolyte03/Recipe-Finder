@@ -8,7 +8,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 
-
+/* index.html elements */
 .title{
     font-family: 'Bentham', serif;
     font-size: 3vw;
@@ -54,7 +54,9 @@
 selectors, such as <h1 id = "index header"> vs
 <h1 id = "search header>*/
 
-body{
+/* template elements */
+
+/* body{
 
 }
 
@@ -84,7 +86,7 @@ p {
 
 footer {
 
-}
+} */
 
 /* Can import other .sass modules above bulma */
 /* Goes at bottom of page after everything else */
