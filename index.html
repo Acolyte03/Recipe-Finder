@@ -33,16 +33,16 @@
         <label class="label">Search for a Recipe!</label>
         <div class="control">
 
-            <input class="input" type="text" placeholder="Search... burger, pasta, etc.">
+            <input class="input" type="text" id = "foodQuery" placeholder="Search... burger, pasta, etc.">
             <div class="select">
                 <select id = "dropdown">
-                  <option>Select dropdown</option>
-                  <option>Pair with Beverages</option>
+                  <option>Food</option>
+                  <option>Drink</option>
                 </select>
               </div>
             <button class="Btn" id = "foodInput">Search</button>
 
-            <input class="input" type="text" id = "query" placeholder="Search... Vodka, Tequila, etc.">
+            <input class="input" type="text" id = "drinkQuery" placeholder="Search... Vodka, Tequila, etc.">
             <button class="Btn" id = "inputButton">Search</button>
 
         </div>
@@ -58,11 +58,11 @@
         <div class="column is-4">
           <div class="card">
             <header class="card-header">
-              <p class="card-header-title">
+              <p class="card-header-title" id = "c0header">
                 Card header
               </p>
               <button class="card-header-icon" aria-label="click-link">
-              <a href="https://www.google.com">Recipe Link</a>
+                <a id = "link0">Recipe Link</a>
               <span class="icon">
                 <!-- Icon doesn't wanna show up :c -->
                 <i class="fa-solid fa-heart" aria-hidden="true"></i>
@@ -70,7 +70,7 @@
             </header>
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img0">
               </figure>
             </div>           
             <div class="content p-5" id = "c0Description">
@@ -83,11 +83,11 @@
             <div class="column is-4">
               <div class="card">
                   <header class="card-header">
-                      <p class="card-header-title">
+                      <p class="card-header-title" id = "c1header">
                         Card header
                       </p>
                       <button class="card-header-icon" aria-label="click-link">
-                        <a href="https://www.google.com">Recipe Link</a>
+                        <a id = "link1">Recipe Link</a>
                         <span class="icon">
                           <!-- Icon doesn't wanna show up :c -->
                           <i class="fa-solid fa-heart" aria-hidden="true"></i>
@@ -95,7 +95,7 @@
                       </header>
                   <div class="card-image">
                       <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img1">
                         </figure>
                   </div>           
                       <div class="content p-5" id = "c1Description">
@@ -109,11 +109,11 @@
                 <div class="column is-4">
                   <div class="card">
                       <header class="card-header">
-                          <p class="card-header-title">
+                          <p class="card-header-title" id = "c2header">
                             Card header
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
-                            <a href="https://www.google.com">Recipe Link</a>
+                            <a id = "link2">Recipe Link</a>
                             <span class="icon">
                               <!-- Icon doesn't wanna show up :c -->
                               <i class="fa-solid fa-heart" aria-hidden="true"></i>
@@ -121,7 +121,7 @@
                           </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img2">
                             </figure>
                       </div>           
                           <div class="content p-5" id = "c2Description">
@@ -135,11 +135,11 @@
                       <div class="column is-4">
                   <div class="card">
                       <header class="card-header">
-                          <p class="card-header-title">
+                          <p class="card-header-title" id = "c3header">
                             Card header
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
-                            <a href="https://www.google.com">Recipe Link</a>
+                            <a id = "link3">Recipe Link</a>
                             <span class="icon">
                               <!-- Icon doesn't wanna show up :c -->
                               <i class="fa-solid fa-heart" aria-hidden="true"></i>
@@ -147,7 +147,7 @@
                           </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img3">
                             </figure>
                       </div>           
                           <div class="content p-5" id = "c3Description">
@@ -161,11 +161,11 @@
                       <div class="column is-4">
                   <div class="card">
                       <header class="card-header">
-                          <p class="card-header-title">
+                          <p class="card-header-title" id = "c4header">
                             Card header
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
-                            <a href="https://www.google.com">Recipe Link</a>
+                            <a id = "link4">Recipe Link</a>
                             <span class="icon">
                               <!-- Icon doesn't wanna show up :c -->
                               <i class="fa-solid fa-heart" aria-hidden="true"></i>
@@ -173,7 +173,7 @@
                           </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img4">
                             </figure>
                       </div>           
                           <div class="content p-5" id = "c4Description">
@@ -187,11 +187,11 @@
                       <div class="column is-4">
                   <div class="card">
                       <header class="card-header">
-                          <p class="card-header-title">
+                          <p class="card-header-title" id = "c5header">
                             Card header
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
-                            <a href="https://www.google.com">Recipe Link</a>
+                            <a id = "link5">Recipe Link</a>
                             <span class="icon">
                               <!-- Icon doesn't wanna show up :c -->
                               <i class="fa-solid fa-heart" aria-hidden="true"></i>
@@ -199,7 +199,7 @@
                             </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img5">
                             </figure>
                       </div>           
                           <div class="content p-5" id = "c5Description">
