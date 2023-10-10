@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 
@@ -6,28 +5,32 @@
     
 
 // <<<<<<< AlbertsBranch
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
-=======
 
-@import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 /* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */
->>>>>>> fb09c413fc15e7c48c257fc18adfffb525198135
 
+    
+
+.backgroun-image{
+    background-repeat: none;
+    background-size:contain
+}
 .title{
-    font-family: 'Bentham', serif;
-    font-size: 3vw;
+
+    font-size: 4vw;
     justify-content: center;
     align-items: center;
-    background-image: url();
+    text-align: center;
+    
+    
     
     
     
 }
 .subtitle{
-    font-size: 2vw;
+    font-size: 3vw;
     font-family: 'Annie Use Your Telescope', cursive;
 }
 
@@ -42,10 +45,7 @@
     height:40%;
     margin:2%
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> fb09c413fc15e7c48c257fc18adfffb525198135
 .input{
     border: grey solid
 }
@@ -62,10 +62,11 @@
      width: 20%;
 
 }
-<<<<<<< HEAD
-// =======
-=======
->>>>>>> fb09c413fc15e7c48c257fc18adfffb525198135
+
+.image{
+    margin-bottom: 6%
+}
+
 /* Can use style.css for both .htmls */
 /* Must give unique id/class names for similar 
 selectors, such as <h1 id = "index header"> vs
@@ -110,9 +111,6 @@ footer {
 /* Can import other .sass modules above bulma */
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-<<<<<<< HEAD
 // >>>>>>> main
-=======
 
 /* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */
->>>>>>> fb09c413fc15e7c48c257fc18adfffb525198135
