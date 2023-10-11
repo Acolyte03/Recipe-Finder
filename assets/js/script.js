@@ -1,3 +1,4 @@
+// On window load, gets food and drink last searched
 $(window).on("load", function() {
     getLocalFoodStorage();
     getLocalDrinkStorage();
@@ -5,11 +6,10 @@ $(window).on("load", function() {
 
 // Variables for input data and search button
 var foodBtn = $(".foodBtn");
-var drinkBtn = $(".Btn");
-var valuePassed = "";
-//var fullArr = [];
+var drinkBtn = $(".drinkBtn");
+var valuePassed;
 
-// When search button clicked, new food search saved to browser.
+// When search button clicked, new food search saved to browser and appended to search history.
 foodBtn.on("click", function(event)
 {
     event.preventDefault();
@@ -19,7 +19,7 @@ foodBtn.on("click", function(event)
     appendFoodHistory(foodData);
 });
 
-// When search button clicked, new drink search saved to browser.
+// When search button clicked, new drink search saved to browser and appended to search history.
 drinkBtn.on("click", function(event)
 {
     event.preventDefault();
@@ -29,10 +29,10 @@ drinkBtn.on("click", function(event)
     appendDrinkHistory(drinkData);
 });
 
-// Appends the search history to the sidebar, under the search bar
+// Appends the food search history to the sidebar, under the search bar.
 function appendFoodHistory(valuePassed)
 {
-    
+    //
     var liNew = $("<li>");
     var buttonNew = $("<button>");
 
@@ -53,6 +53,7 @@ function appendFoodHistory(valuePassed)
 
 }
 
+// Appends the drink search history to the sidebar, under the search bar.
 function appendDrinkHistory(valuePassed)
 {  
     var liNew = $("<li>");
@@ -75,13 +76,15 @@ function appendDrinkHistory(valuePassed)
 
 }
 
+// Gets local storage of food
 function getLocalFoodStorage()
 { 
     //var savedFood = JSON.parse(localStorage.getItem("food"));
     var savedFood = localStorage.getItem("food");
     var saveArr = [];
 
-    savedFood.trim();
+    //savedFood.trim();
+    saveArr.join(savedFood);
     saveArr = savedFood.split(',');
 
     for (var i = 0; i < saveArr.length; i++)
@@ -90,13 +93,15 @@ function getLocalFoodStorage()
     }
 }
 
+// Gets local storage of drink
 function getLocalDrinkStorage()
 {
     //var savedDrink = JSON.parse(localStorage.getItem("drink"));
     var savedDrink = localStorage.getItem("drink");
     var saveArr = [];
 
-    savedDrink.trim();
+    //savedDrink.trim();
+    saveArr.join(savedDrink);
     saveArr = savedDrink.split(',');
 
     for (var i = 0; i < saveArr.length; i++)
@@ -105,6 +110,7 @@ function getLocalDrinkStorage()
     }
 }
 
+// Set local storage of food
 function setLocalFoodStorage(valuePassed)
 {
     var info = localStorage.getItem("food");
@@ -124,7 +130,7 @@ function setLocalFoodStorage(valuePassed)
         appendFoodHistory(valuePassed);
     }
 }
-
+ // Set local storage of drink
 function setLocalDrinkStorage(valuePassed)
 {
     var info = localStorage.getItem("drink");
@@ -145,24 +151,14 @@ function setLocalDrinkStorage(valuePassed)
     }
 }
 
-// // Removes search history if desired; need to implement a button of some kind
-function removeSearchHistory()
+// Clears search history with 'clear history' button
+$(".clearBtn").on("click", function()
 {
-    var info1 = localStorage.getItem("food");
-    var info2 = localStorage.getItem("drink");
-
-    var drinkSearch = [];
-    drinkSearch.push(info);
-    localStorage.setItem("drink", JSON.stringify(drinkSearch));
-    console.log(drinkSearch + " saved.");
-    $(".clearBtn").on("click", function()
-    {
-        //event.preventDefault();
-        localStorage.remove("food");
-
-        localStorage.remove("drink");
-        // set empty array
-        // remove <li> and <buttons> ?
-    })
-}
-// and run function, probably through a single 'clear all' button.
+    //event.preventDefault();
+    console.log("Clicked?");
+    //localStorage.remove("drink");
+    localStorage.clear();
+    $(".remove").innerHTML = "";
+    // set empty array
+    // remove <li> and <buttons> ?
+});

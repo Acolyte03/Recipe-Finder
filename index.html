@@ -18,7 +18,10 @@
 
 <!-- Start of body -->
 <body>
-      <section class="hero is-small is-primary has-text-centered" style="background-image: url(images/imagetodd-quackenbush-x5SRhkFajrA-unsplash.png)">
+  <!-- Background and header of page -->
+      <section class="hero is-small is-primary has-text-centered" 
+      style="background-image: url(images/imagetodd-quackenbush-x5SRhkFajrA-unsplash.png)" 
+      alt="Set of spices and veggies ready to be chopped on a cutting board">
         <div class="hero-body">
           <p class="title is-size-2 has-text-primary has-text-weight-bold ">
             Tasty Tasty
@@ -40,26 +43,30 @@
             <input class="input" type="text" id ="foodQuery" placeholder="Search... Burger, pasta, etc.">
             <button class="Btn foodBtn" id="foodInput">Search</button>
 
-          <!-- Drink dropdown/search -->
+          <!-- Food/Drink dropdown -->
             <div class="select">
                 <select id = "dropdown">
                   <option>Food</option>
                   <option>Drink</option>
                 </select>
               </div>
-            
 
+            <!-- Drink seach -->
             <input class="input" type="text" id ="drinkQuery" placeholder="Search... Vodka, Tequila, etc.">
-            <button class="Btn" id ="inputButton">Search</button>
+            <button class="Btn drinkBtn" id ="inputButton">Search</button>
 
         </div>
     </div>
 
+    <!-- Clear history button -->
     <div class="clear-history">
-      <button class="button clearBtn is-warning is-outlined">Clear history</button>
+      <button class="button clearBtn is-warning is-outlined m-10">Clear history</button>
     </div>
 
+    <!-- Search history to be appended -->
     <div class="search-history">
+      <ul class="remove">
+      </ul>
     </div>
     
     <!-- Start of main (card output) -->
@@ -78,10 +85,7 @@
               </p>
               <button class="card-header-icon" aria-label="click-link">
                 <a id = "link0">Recipe Link</a>
-              <span class="icon">
-                <!-- Icon doesn't wanna show up :c -->
-                <i class="fa-solid fa-heart" aria-hidden="true"></i>
-              </span>
+              </button>
             </header>
             <div class="card-image">
               <figure class="image is-4by3">
@@ -104,10 +108,7 @@
                       </p>
                       <button class="card-header-icon" aria-label="click-link">
                         <a id = "link1">Recipe Link</a>
-                        <span class="icon">
-                          <!-- Icon doesn't wanna show up :c -->
-                          <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                        </span>
+                      </button>
                       </header>
                   <div class="card-image">
                       <figure class="image is-4by3">
@@ -130,10 +131,7 @@
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
                             <a id = "link2">Recipe Link</a>
-                            <span class="icon">
-                              <!-- Icon doesn't wanna show up :c -->
-                              <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                            </span>
+                          </button>
                           </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
@@ -156,10 +154,7 @@
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
                             <a id = "link3">Recipe Link</a>
-                            <span class="icon">
-                              <!-- Icon doesn't wanna show up :c -->
-                              <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                            </span>
+                          </button>
                           </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
@@ -182,10 +177,7 @@
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
                             <a id = "link4">Recipe Link</a>
-                            <span class="icon">
-                              <!-- Icon doesn't wanna show up :c -->
-                              <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                            </span>
+                          </button>
                           </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
@@ -208,10 +200,7 @@
                           </p>
                           <button class="card-header-icon" aria-label="click-link">
                             <a id = "link5">Recipe Link</a>
-                            <span class="icon">
-                              <!-- Icon doesn't wanna show up :c -->
-                              <i class="fa-solid fa-heart" aria-hidden="true"></i>
-                            </span>
+                          </button>
                             </header>
                       <div class="card-image">
                           <figure class="image is-4by3">
