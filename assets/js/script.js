@@ -152,13 +152,8 @@ function setLocalDrinkStorage(valuePassed)
 }
 
 // Clears search history with 'clear history' button
-$(".clearBtn").on("click", function()
-{
-    //event.preventDefault();
-    console.log("Clicked?");
-    //localStorage.remove("drink");
-    localStorage.clear();
-    $(".remove").innerHTML = "";
-    // set empty array
-    // remove <li> and <buttons> ?
-});
+document.querySelector(".clearBtn").addEventListener("click", function () {
+    localStorage.removeItem("food");
+    localStorage.removeItem("drink");
+    document.querySelector(".search-history").innerHTML = "";
+  });
