@@ -1,69 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 
 /* index.html elements */
+/* Main background image near header of page */
 .background-image{
     background-repeat: none;
-    background-size:contain
+    background-size: contain;
 }
 
-
+/* Title of page: "Tasty Tasty" */
 .title{
     font-size: 4vw;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url();   
-       
+    background-image: url();
+}   
+
+/* Subtitle of page: "Easy Recipe Finder" */
 .subtitle{
     font-size: 3vw;
     font-family: 'Annie Use Your Telescope', cursive;
 }
 
+/* Search bar boxes*/
 .search{
     display: flex;
     width: 20%;
-    margin: 1%;
-    
+    margin: 1%;   
 }
+
+/* Search buttons */
 .Btn{
     width: 40%;
     height: 40%;
     margin: 2%;
 }
 
+/* Input for search bars */
 .input{
     border: grey solid;
+AlbertsBranch
     display:block;
     
+ main
 }
  
+/* Drop-down menu */
 .select{
     margin: 4%;  
 }
-    
-.center{
-     display: block;   
-     margin-right: auto;
-     width: 20%;
 
-}
-
+/* Image variable */
 .image{
     margin-bottom: 6%
 }
 
+ AlbertsBranch
 
 /* Can use style.css for both .htmls */
 /* Must give unique id/class names for similar 
@@ -75,3 +70,7 @@ selectors, such as <h1 id = "index header"> vs
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 }
+
+/* Goes at bottom of page after everything else */
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+ main
