@@ -1,6 +1,6 @@
 # Tasty Tasty: Recipe-Finder
 GitHub Repository: https://github.com/Acolyte03/Recipe-Finder <br />
-Tasty Tasty Website:
+Tasty Tasty Website: https://acolyte03.github.io/Recipe-Finder/
 
 # Objective:
 Using 2 free APIs to design, create, and implement a front-end application using HTML/CSS/JavaScript.
@@ -33,22 +33,23 @@ Mozilla: https://developer.mozilla.org/en-US/
 
 ## Screen Shots
  1st meeting with concept ideas and design.
- [concept planning](<images/concept planning.png>)
+ ![Alt text](<images/concept planning.png>)
+ 
 
  Application design outline and webpage display
- [application layout](<images/concept 2.png>)
+ ![Alt text](<images/concept 2.png>)
 
  Application webpage layout
- [application layout](<images/concept 3.png>)
+ ![Alt text](<images/concept 3.png>)
 
  Allie tinkering with local Storage
- [Allie working on local storage](images/localstorage.png)
+ ![Alt text](images/localstorage.png)
 
  Group testing our application
- [group giving application a test run](images/testrun.png)
+ ![Alt text](images/testrun.png)
 
  Group testing local storage in the website
- [group test run of local storage](<images/localstorageTest Run.png>)
+ ![Alt text](<images/localstorageTest Run.png>)
 
 ## What We Have Learned
 
@@ -68,10 +69,7 @@ Aeryk Andrews: https://github.com/Acolyte03 <br />
 Albert Aleman: https://github.com/aalemanyz67 <br />
 AKA Group 10, best group, 10/10.
 
-GitHub: <br />
-Allie Stewart: https://github.com/AllieStewart <br />
-Aeryk Andrews: https://github.com/Acolyte03 <br />
-Albert Aleman: https://github.com/aalemanyz67
+
 
 ## Licenses
 Please refer to the LICENSE in the repository.

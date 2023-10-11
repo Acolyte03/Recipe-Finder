@@ -32,7 +32,7 @@
 }
 
 .search{
-    display: block;
+    display: flex;
     width: 20%;
     margin: 1%;
     
@@ -44,7 +44,9 @@
 }
 
 .input{
-    border: grey solid
+    border: grey solid;
+    display:block;
+    
 }
  
 .select{
@@ -61,6 +63,7 @@
 .image{
     margin-bottom: 6%
 }
+
 
 /* Can use style.css for both .htmls */
 /* Must give unique id/class names for similar 
