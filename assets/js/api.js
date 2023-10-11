@@ -4,7 +4,7 @@
     // method, cache, credentials, etc, if needed    
     //} .then (response)
 
-    
+    var dropdown = "";
     var foodUrl = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=6&q=';
     var foodOptions = 
     {
@@ -26,11 +26,6 @@
         })
         .then(function(response)
         {
-            // //build cards here
-            // for(i = 0; i < 6; i++)
-            // {
-                
-            // }
             console.log(response);
             console.log(foodSearch);
         })
@@ -39,7 +34,7 @@
             console.error(error);
         });
     } 
-     inputButton.addEventListener('click', apiFoodSearch);
+     foodInput.addEventListener('click', apiFoodSearch);
 
     var drinkUrl = 'https://the-cocktail-db.p.rapidapi.com/search.php?s=';
     var drinkOptions = 
@@ -52,29 +47,65 @@
         }
     };
 
-
+var name = "";
+var description = "";
     function apiDrinkSearch(event)
     {
         event.preventDefault();
-        var drinkQuery = document.querySelector("#query");
+        var drinkQuery = document.querySelector("#Dquery");
         var drinkSearch = drinkUrl.concat(drinkQuery.value);
+        if(dropdown == "Pair with Beverages")
+    {
+        console.log("Hi");
         fetch(drinkSearch, drinkOptions).then(function (response) 
         {
             return response.json()
+            .then(data => 
+                {
+                    console.log(data);
+                    // name = data.name;
+                    // //build cards here
+                    for(i = 0; i < 6; i++)
+                    {
+                        description = data.drinks[i].strInstructions;
+                        $("#c" + i + "Description").text(description);
+                    }
+                    
+                    console.log(description);
+                    // return description;
+                    
+                })
         })
-        .then(function(response)
-        {
-            // //build cards here
-            // for(i = 0; i < 6; i++)
-            // {
-                
-            // }
-            console.log(response);
-            console.log(drinkSearch);
-        })
+        // .then(function(response)
+        // {
+        //     console.log(description);
+        //     //build cards here
+        //     for(i = 0; i < 6; i++)
+        //     {
+        //         $("#c1Description").text(description);
+        //     }
+        //     console.log(response);
+        //     console.log(drinkSearch);
+        // })
         .catch(function(error)
         {
-            console.error(error);
+            console.log(error);
         });
+    
+    
+    
+    }
     } 
+    window.addEventListener("DOMContentLoaded", function() 
+    { 
+        // when the page has loaded the DOM elements 
+        document.getElementById("dropdown").addEventListener("change", function() 
+        { 
+          dropdown = dropdown.concat(this.value);
+        })
+    });
+    
+    
+    
+    
     inputButton.addEventListener('click', apiDrinkSearch);
