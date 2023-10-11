@@ -148,11 +148,20 @@ function setLocalDrinkStorage(valuePassed)
 // // Removes search history if desired; need to implement a button of some kind
 function removeSearchHistory()
 {
+    var info1 = localStorage.getItem("food");
+    var info2 = localStorage.getItem("drink");
+
+    var drinkSearch = [];
+    drinkSearch.push(info);
+    localStorage.setItem("drink", JSON.stringify(drinkSearch));
+    console.log(drinkSearch + " saved.");
     $(".clearBtn").on("click", function()
     {
         //event.preventDefault();
         localStorage.remove("food");
+
         localStorage.remove("drink");
+        // set empty array
         // remove <li> and <buttons> ?
     })
 }
