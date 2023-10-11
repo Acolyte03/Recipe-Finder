@@ -1,54 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Bentham&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
-<<<<<<< HEAD
-
-   
-    
-
-// <<<<<<< AlbertsBranch
-
 
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
-/* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 
-
-    
-
-=======
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&display=swap');
 
->>>>>>> 448d39f015792a91f7b1c0524f0bcc73b119a508
-.backgroun-image{
+/* index.html elements */
+.background-image{
     background-repeat: none;
     background-size:contain
 }
 
-/* index.html elements */
 
 .title{
     font-size: 4vw;
     justify-content: center;
     align-items: center;
     text-align: center;
-<<<<<<< HEAD
-    
-    
-    
-    
-    
     background-image: url();   
-=======
-    background-image: url();   
-
->>>>>>> 448d39f015792a91f7b1c0524f0bcc73b119a508
-}
        
 .subtitle{
     font-size: 3vw;
@@ -91,46 +67,7 @@
 selectors, such as <h1 id = "index header"> vs
 <h1 id = "search header>*/
 
-/* template elements */
-
-/* body{
-
-}
-
-header{
-
-}
-
-h1 {
-
-}
-
-h2 {
-
-}
-
-h3 {
-
-}
-
-p {
-
-}
-
-.img {
-
-}
-
-footer {
-
-} */
 
 
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-<<<<<<< HEAD
-// >>>>>>> main
-
-/* 265e6749afb4a18f7fa3844c223a527f25eb79c9 */
-=======
->>>>>>> 448d39f015792a91f7b1c0524f0bcc73b119a508
