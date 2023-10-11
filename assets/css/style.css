@@ -27,7 +27,7 @@
 
 /* Search bar boxes*/
 .search{
-    display: flex;
+    display: inline-block;
     width: 20%;
     margin: 1%;   
 }
@@ -42,10 +42,7 @@
 /* Input for search bars */
 .input{
     border: grey solid;
-AlbertsBranch
-    display:block;
-    
- main
+    display: block;  
 }
  
 /* Drop-down menu */
@@ -55,22 +52,16 @@ AlbertsBranch
 
 /* Image variable */
 .image{
-    margin-bottom: 6%
+    margin-bottom: 6%;
 }
 
- AlbertsBranch
+.clear-history{
+    display: inline-flex;
+}
 
-/* Can use style.css for both .htmls */
-/* Must give unique id/class names for similar 
-selectors, such as <h1 id = "index header"> vs
-<h1 id = "search header>*/
-
-
-
-/* Goes at bottom of page after everything else */
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+.search-history{
+    display: flex;
 }
 
 /* Goes at bottom of page after everything else */
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
- main
