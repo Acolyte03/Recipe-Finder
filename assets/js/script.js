@@ -76,7 +76,7 @@ function appendDrinkHistory(valuePassed)
 
 }
 
-// Gets local storage of food
+// Gets local storage of food.
 function getLocalFoodStorage()
 { 
     //var savedFood = JSON.parse(localStorage.getItem("food"));
@@ -93,7 +93,7 @@ function getLocalFoodStorage()
     }
 }
 
-// Gets local storage of drink
+// Gets local storage of drink.
 function getLocalDrinkStorage()
 {
     //var savedDrink = JSON.parse(localStorage.getItem("drink"));
@@ -110,7 +110,7 @@ function getLocalDrinkStorage()
     }
 }
 
-// Set local storage of food
+// Sets local storage of food.
 function setLocalFoodStorage(valuePassed)
 {
     var info = localStorage.getItem("food");
@@ -130,7 +130,7 @@ function setLocalFoodStorage(valuePassed)
         appendFoodHistory(valuePassed);
     }
 }
- // Set local storage of drink
+ // Sets local storage of drink.
 function setLocalDrinkStorage(valuePassed)
 {
     var info = localStorage.getItem("drink");
@@ -156,4 +156,5 @@ document.querySelector(".clearBtn").addEventListener("click", function () {
     localStorage.removeItem("food");
     localStorage.removeItem("drink");
     document.querySelector(".search-history").innerHTML = "";
+    console.log("History cleared.");
   });
