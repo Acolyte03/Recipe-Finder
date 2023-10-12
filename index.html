@@ -24,7 +24,7 @@
       <section class="hero is-small is-primary has-text-centered" 
       style="background-image: url(images/imagetodd-quackenbush-x5SRhkFajrA-unsplash.png)" 
       alt="Set of spices and veggies ready to be chopped on a cutting board">
-
+      <!-- Header titles on top of page -->
         <div class="hero-body">
           <p class="title is-size-2 has-text-primary has-text-weight-bold">Tasty Tasty</p>
           <p class="subtitle has-text-primary has-text-weight-bold">Easy Recipe Finder</p>
@@ -42,7 +42,6 @@
 
           <!-- Food/Drink dropdown -->
             <div class="select">
-
                 <select id="dropdown">
                   <option>Food</option>
                   <option>Drink</option>
@@ -50,7 +49,7 @@
               </div>
 
             <!-- Drink search -->
-            <input class="input mt-2" type="text" id="drinkQuery" placeholder="Search... Vodka, Tequila, etc.">
+            <input class="input mt-2" type="text" id="drinkQuery" placeholder="Search... Vodka, tequila, etc.">
             <button class="Btn drinkBtn mt-2" id ="inputButton">Search</button>
 
         </div>
@@ -59,21 +58,24 @@
     <!-- Clear history button -->
     <div class="clear-history">
       <button class="button clearBtn is-warning is-outlined m-10">Clear history</button>
+      
+      <!-- Search history to be appended -->
+      <div class="search-history">
+      </div>
 
-          <!-- Search history to be appended -->
-    <div class="search-history">
-    </div>
     </div>
 
     
     <!-- Start of main (card output) -->
     <main>
-      <!-- Output search results of food input, up to 4-6 on a page -->
+      <!-- Output search results of food input, six on a page -->
       <!-- Would include as cards: food name on top, image of food;
-      clicking on image would direct to a recipe for said food -->
-      <div class="container is-variable">
+      clicking on image would direct to a recipe for said food, quick
+      recipe description on bottom -->
+    <div class="container is-variable">
       <div class="columns is-flex-wrap-wrap">
 
+        <!-- Card one - row one, left-most one -->
         <div class="column is-4">
           <div class="card">
             <header class="card-header">
@@ -96,124 +98,125 @@
             </div>
           </div>
         </div>
+        <!-- Card two - row one, middle one -->
+        <div class="column is-4">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" id = "c1header">
+                Card header
+              </p>
+              <button class="card-header-icon" aria-label="click-link">
+                <a id = "link1">Recipe Link</a>
+              </button>
+            </header>
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img1">
+              </figure>
+            </div>           
+            <div class="content p-5" id = "c1Description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- Card three - row one, right-most one -->
+        <div class="column is-4">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" id = "c2header">
+                Card header
+              </p>
+              <button class="card-header-icon" aria-label="click-link">
+                <a id = "link2">Recipe Link</a>
+              </button>
+            </header>
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img2">
+              </figure>
+            </div>           
+            <div class="content p-5" id = "c2Description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- Card four - row two, left-most one -->
+        <div class="column is-4">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" id = "c3header">
+                Card header
+              </p>
+              <button class="card-header-icon" aria-label="click-link">
+                <a id = "link3">Recipe Link</a>
+              </button>
+            </header>
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img3">
+              </figure>
+            </div>           
+            <div class="content p-5" id = "c3Description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- Card five - row two, middle one -->
+        <div class="column is-4">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" id = "c4header">
+                Card header
+              </p>
+              <button class="card-header-icon" aria-label="click-link">
+                <a id = "link4">Recipe Link</a>
+              </button>
+            </header>
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img4">
+              </figure>
+            </div>           
+            <div class="content p-5" id = "c4Description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+          </div>
+        </div>
+        <!-- Card six - row two, right-most one -->
+        <div class="column is-4">
+          <div class="card">
+            <header class="card-header">
+              <p class="card-header-title" id = "c5header">
+                Card header
+              </p>
+              <button class="card-header-icon" aria-label="click-link">
+                <a id = "link5">Recipe Link</a>
+              </button>
+            </header>
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img5">
+              </figure>
+            </div>           
+            <div class="content p-5" id = "c5Description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus nec iaculis mauris.
+              <br>
+            </div>
+          </div>
+        </div>
 
-            <div class="column is-4">
-              <div class="card">
-                  <header class="card-header">
-                      <p class="card-header-title" id = "c1header">
-                        Card header
-                      </p>
-                      <button class="card-header-icon" aria-label="click-link">
-                        <a id = "link1">Recipe Link</a>
-                      </button>
-                      </header>
-                  <div class="card-image">
-                      <figure class="image is-4by3">
-                          <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img1">
-                        </figure>
-                  </div>           
-                      <div class="content p-5" id = "c1Description">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Phasellus nec iaculis mauris.
-                      <br>
-                      </div>
-                  </div>
-              </div>
-
-                <div class="column is-4">
-                  <div class="card">
-                      <header class="card-header">
-                          <p class="card-header-title" id = "c2header">
-                            Card header
-                          </p>
-                          <button class="card-header-icon" aria-label="click-link">
-                            <a id = "link2">Recipe Link</a>
-                          </button>
-                          </header>
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img2">
-                            </figure>
-                      </div>           
-                          <div class="content p-5" id = "c2Description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Phasellus nec iaculis mauris.
-                          <br>
-                          </div>
-                      </div>
-                      </div>
-
-                      <div class="column is-4">
-                  <div class="card">
-                      <header class="card-header">
-                          <p class="card-header-title" id = "c3header">
-                            Card header
-                          </p>
-                          <button class="card-header-icon" aria-label="click-link">
-                            <a id = "link3">Recipe Link</a>
-                          </button>
-                          </header>
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img3">
-                            </figure>
-                      </div>           
-                          <div class="content p-5" id = "c3Description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Phasellus nec iaculis mauris.
-                          <br>
-                          </div>
-                      </div>
-                      </div>
-
-                      <div class="column is-4">
-                  <div class="card">
-                      <header class="card-header">
-                          <p class="card-header-title" id = "c4header">
-                            Card header
-                          </p>
-                          <button class="card-header-icon" aria-label="click-link">
-                            <a id = "link4">Recipe Link</a>
-                          </button>
-                          </header>
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img4">
-                            </figure>
-                      </div>           
-                          <div class="content p-5" id = "c4Description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Phasellus nec iaculis mauris.
-                          <br>
-                          </div>
-                      </div>
-                      </div>
-
-                      <div class="column is-4">
-                  <div class="card">
-                      <header class="card-header">
-                          <p class="card-header-title" id = "c5header">
-                            Card header
-                          </p>
-                          <button class="card-header-icon" aria-label="click-link">
-                            <a id = "link5">Recipe Link</a>
-                          </button>
-                            </header>
-                      <div class="card-image">
-                          <figure class="image is-4by3">
-                              <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" id = "img5">
-                            </figure>
-                      </div>           
-                          <div class="content p-5" id = "c5Description">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                          Phasellus nec iaculis mauris.
-                          <br>
-                          </div>
-                      </div>
-                      </div>
       </div>
     </div>
-
+<!-- End of card output -->
   </main>
     <!-- Link to jQuery version -->
     <script src="https://code.jquery.com/jquery-3.7.1.js" 
@@ -228,3 +231,4 @@
 
 </body>
 </html>
+<!-- End of HTML -->
