@@ -1,6 +1,8 @@
+//----------------------------------Start of JS file----------------------------------
+// Variables for 'dropdown' menu value, API url.
 var dropdown = "";
 var foodUrl = 'https://tasty.p.rapidapi.com/recipes/list?from=0&size=6&q=';
-
+// Variable for fetching 'foodOptions' from food API; uses API key and host name.
 var foodOptions = 
 {
     method: 'GET',
@@ -10,12 +12,12 @@ var foodOptions =
         'X-RapidAPI-Host': 'tasty.p.rapidapi.com'
     }
 };
-
+// Variables for user input, description of food, food API link, and food image.
 var foodName = "";
 var foodDescription = "";
 var foodLink = "https://tasty.co/search?q=";
 var foodImg = "";
-
+// When user searches for a kind of food, the function goes through food API ("tasty.co") in order to access information.
 function apiFoodSearch(event)
 {
     event.preventDefault();
@@ -27,6 +29,8 @@ function apiFoodSearch(event)
     })
     .then(data => 
     {
+        // After receiving response, all food information is displayed to six cards.
+        // Name, recipe link, description, image.
         for(i = 0; i < 6; i++)
         {
             foodDescription = data.results[i].description;
@@ -46,12 +50,13 @@ function apiFoodSearch(event)
     })
     .catch(function(error)
     {
+        // Catches error if searched food item does not exist/was entered wrong.
         console.log(error);
     });
 } 
 
 var drinkUrl = 'https://the-cocktail-db.p.rapidapi.com/search.php?s=';
-
+// Variable for fetching 'drinkOptions' from drink API; uses API key and host name.
 var drinkOptions = 
 {
     method: 'GET',
@@ -61,12 +66,12 @@ var drinkOptions =
         'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
     }
 };
-
+// Variables for user input, description of drink, drink API link, and drink image.
 var drinkName = "";
 var description = "";
 var drinkLink = "https://www.thecocktaildb.com/drink/";
 var drinkImg = "";
-
+// When user searches for a kind of drink, the function goes through drink API ("thecocktaildb.com") in order to access information.
 function apiDrinkSearch(event)
 {
     event.preventDefault();
@@ -79,6 +84,8 @@ function apiDrinkSearch(event)
             return response.json()
             .then(data => 
             {
+                // After receiving response, all drink information is displayed to six cards.
+                // Name, recipe link, description, image.
                 for(i = 0; i < 6; i++)
                 {
                     description = data.drinks[i].strInstructions;
@@ -98,10 +105,12 @@ function apiDrinkSearch(event)
         })
         .catch(function(error)
         {
+            // Catches error if searched drink item does not exist/was entered wrong.
             console.log(error);
         });
     }
 } 
+// On window load, gets food and drink info from dropdown menu.
 window.addEventListener("DOMContentLoaded", function() 
 {
     document.getElementById("dropdown").addEventListener("change", function() 
@@ -110,5 +119,7 @@ window.addEventListener("DOMContentLoaded", function()
     })
 });
 
+// The event listeners for the food and drink search buttons.
 inputButton.addEventListener('click', apiDrinkSearch);
 foodInput.addEventListener('click', apiFoodSearch);
+  //----------------------------------End of JS file----------------------------------

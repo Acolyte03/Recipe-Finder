@@ -63,7 +63,16 @@ First meeting with concept ideas and design. <br />
  ![Alt text](<images/localstorageTest Run.png>) <br />
 
  Final homepage design. <br />
- <br />
+ ![Alt text](images/main-page.png) <br />
+
+ When searching one item. <br />
+ ![Alt text](images/searching-one-item1.png) <br />
+
+ The full info from all six cards. <br />
+ ![Alt text](images/searching-one-item2.png) <br />
+
+ Multiple items searched; history appends to page. <br />
+ ![Alt text](images/multiple-searches.png) <br />
 
 ## Reflection, Future Improvement, and What We Learned
 Unfortunately, not everything that was planned was able to be completed. <br />
